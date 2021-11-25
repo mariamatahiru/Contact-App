@@ -4,7 +4,45 @@ import 'package:contact_application/contact_view.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+ HomePage({Key? key}) : super(key: key);
+  
+  final List<Map<String,String>>data=[
+    {
+      "name":"Regan mansah",
+      "phone":"0559953732",
+      "email":"mariama247",
+      "country":"ghana",
+      "region":"eastern"
+    },
+{
+       "name" :"Asamoah Nora",
+      "phone":"0245435677",
+      "email":"nora@gmail.com",
+      "country":"ghana",
+      "region":"savanah"
+    },
+    {
+     "name":"Regan mansah",
+      "phone":"0245678762",
+      "email":"regan@gmail.com",
+      "country":"ghana",
+      "region":"northern"
+    },
+    {
+     "name":"Iddrisu Rahida",
+      "phone":"0245678954",
+      "email":"rahida@gmail.com",
+      "country":"ghana",
+      "region":"western"
+    },
+    {
+     "name":"Alex mansah",
+      "phone":"0243542258",
+      "email":"mensah247",
+      "country":"ghana",
+      "region":"southern"
+    }
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +144,7 @@ class HomePage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 15.0, fontWeight: FontWeight.w600),
                       ),
-                      subtitle: Text('+233559951971'),
+                      subtitle: Text('welcome'),
                       trailing: Icon(
                         Icons.more_horiz,
                         size: 20,
@@ -129,6 +167,13 @@ class HomePage extends StatelessWidget {
           ),
           onPressed: () {},
           backgroundColor: Colors.black,
+
+
+
+
+
+
+          
         ));
   }
 }
